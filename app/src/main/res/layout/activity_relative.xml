@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txtGreeting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="32sp"
+        android:textColor="#FF0000"
+        android:text="@string/greeting" />
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click me!"
+        android:layout_toRightOf="@id/txtGreeting"
+        android:onClick="buttonClicked"/>
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/android_maneki"
+        android:layout_below="@id/button"
+        android:layout_toRightOf="@id/txtGreeting"/>
+</RelativeLayout>
